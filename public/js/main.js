@@ -132,7 +132,7 @@ setTimeout(() => {
 setTimeout(() => {
     epicerie.contenu.forEach((element, index) => { 
         abdel.mainDroite[0].contenu[index] = element;
-        console.log(`${abdel.nom} prend ${element.nom} et le met dans son panier`);              
+        console.log(`${abdel.nom} prend ${element.nom} qui cout ${element.prix} € et le met dans son panier`);              
     });
 }, 7000);
 // Payer chaque ingrédient récupéré dans le panier. Avec une boucle aussi, on va les passer 1 à 1 dans la fonction payerArticle()
@@ -140,7 +140,7 @@ setTimeout(() => {
     abdel.mainDroite[0].contenu.forEach((element) => {
     abdel.payerArticle(element);
 });
-    console.log(`Il reste ${abdel.argent} euros a ${abdel.nom}, il est tres riche.`);
+    console.log(`Il reste ${abdel.argent} € a ${abdel.nom}, il est tres riche.`);
 },9000);
 
 
